@@ -16,28 +16,26 @@
         android:text="@string/strNamePlaceholder"
         android:ems="10"
         android:id="@+id/edtxtNameField"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:layout_below="@+id/txtvwPrompt"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/strGetGreeted"
         android:id="@+id/btnGreetMe"
-        android:layout_below="@+id/edtxtNameField"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
-        android:onClick="greetTheUser" />
+        android:onClick="greetTheUser"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/txtvwGreetingSpace"
-        android:layout_below="@+id/btnGreetMe"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp" />
+        android:layout_below="@+id/edtxtNameField3"
+        android:layout_alignRight="@+id/txtvwPrompt2"
+        android:layout_alignEnd="@+id/txtvwPrompt2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +43,51 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/strPromptQuestion"
         android:id="@+id/txtvwPrompt"
+        android:layout_marginTop="44dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_alignLeft="@+id/edtxtNameField3"
+        android:layout_alignStart="@+id/edtxtNameField3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strPromptQuestion2"
+        android:id="@+id/txtvwPrompt2"
+        android:layout_below="@+id/edtxtNameField"
+        android:layout_alignLeft="@+id/edtxtNameField"
+        android:layout_alignStart="@+id/edtxtNameField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/strPromptQuestion3"
+        android:layout_below="@+id/edtxtNameField2"
+        android:layout_alignLeft="@+id/edtxtNameField2"
+        android:layout_alignStart="@+id/edtxtNameField2"
+        android:id="@+id/txtvwPrompt3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtNameField2"
+        android:layout_below="@+id/txtvwPrompt2"
+        android:layout_alignLeft="@+id/txtvwPrompt2"
+        android:layout_alignStart="@+id/txtvwPrompt2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/strNamePlaceholder"
+        android:ems="10"
+        android:id="@+id/edtxtNameField3"
+        android:layout_below="@+id/txtvwPrompt3"
+        android:layout_alignLeft="@+id/txtvwPrompt3"
+        android:layout_alignStart="@+id/txtvwPrompt3" />
+
 </RelativeLayout>

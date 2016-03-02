@@ -15,6 +15,8 @@ public class BeGreeted extends AppCompatActivity {
     Button btnGreetMe;
     EditText edtxtNameField;
     TextView txtvwGreetingSpace;
+    EditText edtxtNameField2;
+    EditText edtxtNameField3;
 
 
     @Override
@@ -24,6 +26,8 @@ public class BeGreeted extends AppCompatActivity {
 
         btnGreetMe = (Button) findViewById(R.id.btnGreetMe);
         edtxtNameField = (EditText) findViewById(R.id.edtxtNameField);
+        edtxtNameField2 = (EditText) findViewById(R.id.edtxtNameField2);
+        edtxtNameField3 = (EditText) findViewById(R.id.edtxtNameField3);
         txtvwGreetingSpace = (TextView) findViewById(R.id.txtvwGreetingSpace);
     }
 
@@ -32,6 +36,8 @@ public class BeGreeted extends AppCompatActivity {
         Resources res = getResources();
 
         strUsersName = edtxtNameField.getText().toString();
+        strUsersName = strUsersName + " " +  edtxtNameField2.getText().toString();
+        strUsersName = strUsersName + " " +edtxtNameField3.getText().toString();
 
         txtvwGreetingSpace.setText(String.format(res.getString(R.string.strGreeting), strUsersName));
     }
